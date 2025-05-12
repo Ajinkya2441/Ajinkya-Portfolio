@@ -71,7 +71,7 @@ export default function Navbar() {
             className="text-3xl font-bold text-cyan-400 group-hover:text-white transition-colors duration-300"
             variants={linkVariants}
           >
-            Portfolio
+            Ajinkya
           </motion.span>
           <motion.span
             className="text-xl font-light text-gray-300 group-hover:text-cyan-300 transition-colors duration-300 tracking-wider"
