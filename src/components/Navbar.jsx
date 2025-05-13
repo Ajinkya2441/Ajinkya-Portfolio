@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Image from 'next/image';
 import {
   FaLinkedin,
   FaGithub,
@@ -61,24 +62,24 @@ export default function Navbar() {
 
         {/* Updated Logo */}
         <motion.div
-          className="relative z-10 flex items-baseline space-x-1 cursor-pointer select-none group"
+          className="relative z-10 flex items-center space-x-3 cursor-pointer select-none group"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
           whileHover="hover"
         >
+          <Image
+            src="/logo.png"
+            alt="Logo"
+            width={40}
+            height={40}
+            className="rounded-full"
+          />
           <motion.span
-            className="text-3xl font-bold text-cyan-400 group-hover:text-white transition-colors duration-300"
+            className="text-2xl font-bold text-cyan-400 group-hover:text-white transition-colors duration-300"
             variants={linkVariants}
           >
             Ajinkya
-          </motion.span>
-          <motion.span
-            className="text-xl font-light text-gray-300 group-hover:text-cyan-300 transition-colors duration-300 tracking-wider"
-            variants={linkVariants}
-            transition={{ delay: 0.05 }}
-          >
-            
           </motion.span>
         </motion.div>
 
